@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="CR" Folio="8005405963" Sello="U" FormaPago="15" NoCertificado="0" Certificado="L" Moneda="MXN" TipoDeComprobante="E" Exportacion="01" MetodoPago="PUE" LugarExpedicion="22643" Fecha="2023-09-13T20:00:19" SubTotal="9375.38" TipoCambio="1" Total="9375.38" xmlns:cfdi="http://www.sat.gob.mx/cfd/4">
+  <cfdi:CfdiRelacionados TipoRelacion="01">
+    <cfdi:CfdiRelacionado UUID="A93B66E5-3E1F-414B-A15D-CA54C1375DC4" />
+  </cfdi:CfdiRelacionados>
+  <cfdi:Emisor Rfc="NAD901023GRA" Nombre="NADRO" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="BIP1804116Z9" Nombre="BIPOP" DomicilioFiscalReceptor="32459" RegimenFiscalReceptor="601" UsoCFDI="G02" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="84111506" ClaveUnidad="ACT" Unidad="ACT" Descripcion="DESCUENTO LEALTAD CIRCULO ORO" ObjetoImp="02" Cantidad="1" ValorUnitario="9375.38" Importe="9375.38">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="9375.38" TasaOCuota="0.000000" Importe="0.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="0.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado Impuesto="002" TipoFactor="Tasa" Base="9375.38" TasaOCuota="0.000000" Importe="0.00" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="D98BFD52-9AF5-4809-95A7-C25376535DB4" FechaTimbrado="2023-09-13T21:01:04" RfcProvCertif="SST060807KU0" SelloCFD="U" NoCertificadoSAT="00001000000506202789" SelloSAT="F" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>
+
+//Esquema usando solo un producto y un UUID relacionado
